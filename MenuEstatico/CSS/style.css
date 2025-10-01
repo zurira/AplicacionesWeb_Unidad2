@@ -4,3 +4,15 @@
     background-color: rgb(242, 204, 176);
     position: fixed;
 }
+
+.titulo{
+    color: red;
+}
+
+.subtitulos{
+    color: blue;
+}
+
+.menu2{
+    color: green;
+}
