@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    padding: 20px;
+    background-color: rgb(239, 214, 183);
+}
+
+.contenedor{
+    /*genera una cuadricula que permite mover los elementos*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);  /* dos columnas */
+    gap:20px; /* define el espacio entre las columnas/elementos */
+}
+
+.caja{
+    background-color: beige;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+@media(max-width:1280px){
+    .contenedor{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:1024px){
+    .contenedor{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:800px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
+
